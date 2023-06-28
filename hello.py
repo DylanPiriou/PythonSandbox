@@ -17,10 +17,24 @@
 #     print ("Ce n'est pas une phrase palindromique.")
 
 # Compter le nombre de voyelles
-voyelles = ["a", "e", "i", "o", "u"]
-phrase = input("Veuillez entrer une phrase : ")
-nb_voyelles = 0
-for lettre in phrase.lower():
-    if lettre in voyelles:
-        nb_voyelles += 1
-print(f"Il y a {nb_voyelles} voyelles dans la phrase.")
+# voyelles = ["a", "e", "i", "o", "u"]
+# phrase = input("Veuillez entrer une phrase : ")
+# nb_voyelles = 0
+# for lettre in phrase.lower():
+#     if lettre in voyelles:
+#         nb_voyelles += 1
+# print(f"Il y a {nb_voyelles} voyelles dans la phrase.")
+
+# Calculette
+first = input("Veuillez entre un premier nombre : ")
+second = input("Veuillez entre un deuxième nombre : ")
+
+print(f"Le résultat de l'addition du nombre {first} avec le nombre {second} est égale à {int(first) + int(second)}")
+
+import random
+
+tableau = ["hello", "apple", "banana", "hey", "cool"]
+random.shuffle(tableau)
+print(tableau)
+
+print(random.randint(0, 10))
