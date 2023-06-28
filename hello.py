@@ -26,15 +26,31 @@
 # print(f"Il y a {nb_voyelles} voyelles dans la phrase.")
 
 # Calculette
-first = input("Veuillez entre un premier nombre : ")
-second = input("Veuillez entre un deuxième nombre : ")
+# first = input("Veuillez entre un premier nombre : ")
+# second = input("Veuillez entre un deuxième nombre : ")
 
-print(f"Le résultat de l'addition du nombre {first} avec le nombre {second} est égale à {int(first) + int(second)}")
+# print(f"Le résultat de l'addition du nombre {first} avec le nombre {second} est égale à {int(first) + int(second)}")
 
-import random
+# Random
+# import random
 
-tableau = ["hello", "apple", "banana", "hey", "cool"]
-random.shuffle(tableau)
-print(tableau)
+# tableau = ["hello", "apple", "banana", "hey", "cool"]
+# random.shuffle(tableau)
+# print(tableau)
 
-print(random.randint(0, 10))
+# print(random.randint(0, 10))
+
+# tableau = ["hello", "a", "b"]
+# tableau.remove("hello")
+# print(tableau)
+
+# Générateur nom de dossier
+phrase = input("Entrez un nom de dossier : ")
+
+caracteres_indesirables = ['?', '!', '.', ',', ';', ':', ' ']
+for caractere in caracteres_indesirables:
+    phrase = phrase.replace(caractere, '_')
+
+phrase = phrase.lower()
+
+print(f"Le dossier {phrase} a été créé avec succès !")
