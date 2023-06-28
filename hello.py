@@ -45,12 +45,24 @@
 # print(tableau)
 
 # Générateur nom de dossier
-phrase = input("Entrez un nom de dossier : ")
+# phrase = input("Entrez un nom de dossier : ")
 
-caracteres_indesirables = ['?', '!', '.', ',', ';', ':', ' ']
-for caractere in caracteres_indesirables:
-    phrase = phrase.replace(caractere, '_')
+# caracteres_indesirables = ['?', '!', '.', ',', ';', ':', ' ']
+# for caractere in caracteres_indesirables:
+#     phrase = phrase.replace(caractere, '_')
 
-phrase = phrase.lower()
+# phrase = phrase.lower()
 
-print(f"Le dossier {phrase} a été créé avec succès !")
+# print(f"Le dossier {phrase} a été créé avec succès !")
+
+mdp = input("Entrez un mot de passe (min 8 caractères) : ")
+mdp_trop_court = "votre mot de passe est trop court."
+
+if not mdp:
+    print(mdp_trop_court.upper())
+elif len(mdp)<8:
+    print(mdp_trop_court.capitalize())
+elif mdp.isdigit():
+    print("Votre mot de passe ne contient que des nombres.")
+else:
+    print("Inscription terminée.")
